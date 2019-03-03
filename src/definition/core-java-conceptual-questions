@@ -4,9 +4,6 @@ What is programing language?
 A.
 A programming language is a set of instructions used to produce various kinds of output used in computer programming to create programs that implement specific algorithms.
 
-
-
-
 What jdk contains or composed of and define each components?
 A.
 Runtime Environment
@@ -76,6 +73,9 @@ Inheritance is a class to acquiring properties of other classes, Abstraction is 
 
 What is Java Package and which package is imported by default?
 A.
+A Java package organizes Java classes into namespaces, providing a unique namespace for each type it contains.
+java.lang package is imported by default
+
 What is API? Name list of API that you have used so far.
 A.
 Application programming interface
