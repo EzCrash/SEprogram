@@ -2,83 +2,198 @@ Please answer the below core-java Questions:
 
 What is programing language?
 A.
+A programming language is a set of instructions used to produce various kinds of output used in computer programming to create programs that implement specific algorithms.
 
 
 
 
 What jdk contains or composed of and define each components?
 A.
-
-
-
-
+Runtime Environment
+Compiler
+Applet Viewer
+Debugger
+Class File Disassembler
+Header and Stub File Generator
+Documentation Generator
+Applet Demos
+API Source Code
 
 What is IDE?
 A.
+Integrated development environment
+
 What are the IDEs available in the market to support java?
+A.
+Android Studio, Eclipse, IntelliJ, BlueJ, NetBeams, JDeveloper, DrJava, among others.
+
 Explain the entire java life cycle.
+A.
+Editing the program
+Compiling the source code
+Executing the byte code
+
 what is class?
+A.
+Class is a blueprint of an object
+
 What is object?
+A.
+Object is an instance of a class
+
 What is the entry point of an application?
+A.
+It is the main() method
+
 Why main is static?
+A.
+It's static because main() is called by the JVM before any objects are made, also since it's static it can be directly invooked via the class
+
 Which class is the superclass of all classes?
+A.
+Object class
+
 What is difference between path and classpath variables?
+A.
+Difference is path refers to the system and classpath refers to the developing environment
+
 What is the difference between an Interface and Abstract class?
+A.
+Difference between the two is that interface cannot declare a body methods remain abstract and abstract must have a body implemented, non abstract menthod.
+  
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A.
+You have to implement interface or abstract class in a concrete class, so No
+
 what is Access Specifier?
+A.
+The visibility of classes, methods or variables.
+
 What is OOP ? Define each feature of java OOP.
+A.
+OOP stands for Object Oriented Programming, the features are inheritance, abstraction, encapsulation, and polymorphism
+Inheritance is a class to acquiring properties of other classes, Abstraction is implementation hiding , Encapsulation hides data, Polymorphism allows an object to react differently in different situations(Overloading and overriding)
+
 What is Java Package and which package is imported by default?
+A.
 What is API? Name list of API that you have used so far.
+A.
+Application programming interface
+TestNG API
+
 Does java support multiple inheritance, explain why or why not?
+A.
+Java supports multiple inheritance through interfaces only. A class can implement any number of interfaces but can extend only one class. Multiple inheritance is not supported because it leads to diamond problem.
 What is method overloading and when it happens?
+A.
+Method overloading means providing two separate methods in a class with the same name but different arguments, while the method return type may or may not be different, which allows us to reuse the same method name.
+
 Explain exceptions in java and how to handle it.
+A.
+An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+
+It is handled using "Try" "Catch"
+
 What is static keyword in java? How it has been used in variables and methods ?
+A.
+Static keyword is used to declare a field, method, or inner class as a class field.
+
 What is final and how it has been used variables and methods?
+B.
+Define an entity once that cannot be changed nor derived from later. a final class cannot be subclassed, a final method cannot be overridden, and a final variable can occur at most once as a left-hand expression on an executed command. All methods in a final class are implicitly final.
+
 What is final, finally and finalize?
+A.
+Final is a keyword.	Finally is a block.	Finalize is a method.
+
 What is a constructor ?
+A. Block of code similar to a method that's called when an instance of an object is created (Same name, same class)
+
 Can we have multiple constructors in a class?
+A.
+
 If we don't have a constructor declared, what is called during the object creation?
+
 What is "this" keyword in java ?
+
 What is "super" keyword in java? How many possible way can you use?
+
 What is JVM stand for ?
+
 Is JVM platform independent?
+
 What version of java are you using?
+
 What is JAR stand for ?
+
 What is the difference between JDK and JVM?
+
 What is the difference between JVM and JRE?
+
 What is compile time and run time?
+
 What is heap?
+A. The heap is the runtime data area from which memory for all class instances and arrays is allocated
+
 How java manage it's memory?
+A.
+
 What is the difference between String, StringBuffer and StringBuilder?
+A.
+
 What is Singleton class?
+A. Singleton class controls object creations by keeping private constructor
+
 What is Serialization and Deserialization?
+A.
 when to use transient variable in java?
 Difference between while and do..while loop?
+
 What is Enum?
+A. It's a set of fixed variables
+
 What is Iterator?
+A. It's an object which enables any programmer to traverse a container
+
 Which one will take more memory, an int or Integer?
+
 Why is String Immutable in Java?
+
 What is constructor chaining in Java?
+
 The difference between Serial and Parallel Garbage Collector?
+
 What is JIT stands for?
+A. Just In Time
+
 Explain Java Heap space and Garbage collection?
+
 Can you guarantee the garbage collection process?
+
 What is the difference between stack and heap in Java?
+
 What is reflection in java and why is it useful?
+
 what is multithreading in java?
+
 What is the use of synchronization in Java?
+A.
+
 What is Framework?
+
+Frameworks are large bodies of written code to which you add your own code to solve a problem in a specific domain
+
 What are the testing Framework available in java?
+A. jUnit and testNG
+
 Difference between jUnit and testNG?
+A. Junit has to be declared as static and testNG does not have this constraint
+
 What are the dependencies for this project?
+A. mysql-connector, testng, java-json, and mongo-java-driver
+
 what is dependency injection in java?
+A.
+
 What is static binding and dynamic binding?
-
-
-
-
-
-
-
-
-
+A. Static binding is during compile time and dynamic binding happens during runtime

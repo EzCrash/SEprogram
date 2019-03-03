@@ -1,8 +1,5 @@
 package math.problems;
 
-/**
- * Created by mrahman on 04/22/17.
- */
 public class FindMissingNumber {
 
     public static void main(String[] args) {
@@ -12,6 +9,25 @@ public class FindMissingNumber {
          * Write java code to find the missing number from the array. Write static helper method to find it.
          */
          int [] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
+
+        System.out.print(Missing(array,10));
+    }
+
+    public static int Missing(int[]array, int n){
+
+        int a = 0;
+        int b = 0;
+
+        for (int c = 0; c < n; c++){
+            a += c;
+
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            b += i;
+        }
+        return(b-a);
+
 
     }
 }
