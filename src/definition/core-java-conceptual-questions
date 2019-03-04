@@ -26,7 +26,7 @@ Android Studio, Eclipse, IntelliJ, BlueJ, NetBeams, JDeveloper, DrJava, among ot
 
 Explain the entire java life cycle.
 A.
-Editing the program
+Writing the code
 Compiling the source code
 Executing the byte code
 
@@ -40,53 +40,55 @@ Object is an instance of a class
 
 What is the entry point of an application?
 A.
-It is the main() method
+The main() method
 
 Why main is static?
 A.
-It's static because main() is called by the JVM before any objects are made, also since it's static it can be directly invooked via the class
+Main has to be declared static because keyword static allows main to be called without
+creating an object of the class in which the main method is defined. If we omit static keyword before main Java
+program will successfully compile but it won't execute.
 
 Which class is the superclass of all classes?
 A.
-Object class
+java.lang.Object
 
 What is difference between path and classpath variables?
 A.
-Difference is path refers to the system and classpath refers to the developing environment
-
+Path is an environment variable which is used by the operating system to find the executables. Classpath is an environment variable which is used by the Java compiler to find the path, of classes.
 What is the difference between an Interface and Abstract class?
 A.
-Difference between the two is that interface cannot declare a body methods remain abstract and abstract must have a body implemented, non abstract menthod.
+Difference between the two is that interface cannot declare a body, methods remain abstract, and abstract must have a body implemented, non abstract menthod.
   
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
 A.
-You have to implement interface or abstract class in a concrete class, so No
-
+No
 what is Access Specifier?
 A.
-The visibility of classes, methods or variables.
+Regulator of access to classes,fields and methods. The Specifier determines whether a field or method in a class,
+can be used or invoked by another method in another class or sub-class. Access Specifiers can
+be used to restrict access.
 
 What is OOP ? Define each feature of java OOP.
 A.
-OOP stands for Object Oriented Programming, the features are inheritance, abstraction, encapsulation, and polymorphism
-Inheritance is a class to acquiring properties of other classes, Abstraction is implementation hiding , Encapsulation hides data, Polymorphism allows an object to react differently in different situations(Overloading and overriding)
+Object Oriented Programming, it's features are inheritance, abstraction, encapsulation, and polymorphism
 
 What is Java Package and which package is imported by default?
 A.
-A Java package organizes Java classes into namespaces, providing a unique namespace for each type it contains.
-java.lang package is imported by default
+java.lang
 
 What is API? Name list of API that you have used so far.
 A.
 Application programming interface
+CNN API
 TestNG API
 
 Does java support multiple inheritance, explain why or why not?
 A.
 Java supports multiple inheritance through interfaces only. A class can implement any number of interfaces but can extend only one class. Multiple inheritance is not supported because it leads to diamond problem.
+
 What is method overloading and when it happens?
 A.
-Method overloading means providing two separate methods in a class with the same name but different arguments, while the method return type may or may not be different, which allows us to reuse the same method name.
+Method overloading means providing two or more separate methods in a class with the same name but different arguments
 
 Explain exceptions in java and how to handle it.
 A.
@@ -99,8 +101,8 @@ A.
 Static keyword is used to declare a field, method, or inner class as a class field.
 
 What is final and how it has been used variables and methods?
-B.
-Define an entity once that cannot be changed nor derived from later. a final class cannot be subclassed, a final method cannot be overridden, and a final variable can occur at most once as a left-hand expression on an executed command. All methods in a final class are implicitly final.
+A.
+Final is a keyword that defines an entity once that cannot be changed nor derived from later. a final class cannot be subclassed, a final method cannot be overridden, and a final variable can occur at most once as a left-hand expression on an executed command. All methods in a final class are implicitly final.
 
 What is final, finally and finalize?
 A.
@@ -111,55 +113,105 @@ A. Block of code similar to a method that's called when an instance of an object
 
 Can we have multiple constructors in a class?
 A.
+Yes
 
 If we don't have a constructor declared, what is called during the object creation?
+A.
+the default constructor.
 
 What is "this" keyword in java ?
+A.
+THIS is a reference variable in Java that refers to the current object
 
 What is "super" keyword in java? How many possible way can you use?
+A.
+super refer to the super class the current class is extends to
+we can use the super constructor.
 
 What is JVM stand for ?
+A.
+java virtual machine
 
 Is JVM platform independent?
+A.
+No
 
 What version of java are you using?
+A.
+8
+My "Java -version" output:
+java version "1.8.0_201"
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 What is JAR stand for ?
+A.
+java Archive
 
 What is the difference between JDK and JVM?
+A.
+JDK is a toolkit and JVM is part of JDK
 
 What is the difference between JVM and JRE?
+A.
+JRE is the environment where JVM runs.
 
 What is compile time and run time?
+A.
+compile time is the time it tale to compile the source code.
+When a program is running, or executing, it is said to be in runtime.
 
 What is heap?
 A. The heap is the runtime data area from which memory for all class instances and arrays is allocated
 
 How java manage it's memory?
 A.
+Java stores objects in the heap, then they are created when the JVM starts and may increase or decrease  in size while the application runs.
 
 What is the difference between String, StringBuffer and StringBuilder?
 A.
+String is immutable object. String is stored in the Constant String Pool
+StringBuffer is mutable means one can change the value of the object . The object created through StringBuffer is stored in the heap
+StringBuilder is same as the StringBuffer , that is it stores the object in heap and it can also be modified .
+The main difference between the StringBuffer and StringBuilder is that StringBuilder is also not thread safe. StringBuilder is fast as it is not thread safe .
 
 What is Singleton class?
-A. Singleton class controls object creations by keeping private constructor
+A.
+In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time.
 
 What is Serialization and Deserialization?
 A.
+Serialization converts objects into a sequence of bytes which can be persisted to a  database or sent through streams.
+ Deserialization  is the reverse process of creating objects from sequence of bytes.
+
 when to use transient variable in java?
+A.
+It's used in serialization, and if you classify data members as transient, it will not be serialized.
+
+
 Difference between while and do..while loop?
+A.
+while loop executes the content of the loop once before checking the condition of the while.
+while loop will check the condition first before executing the content.
 
 What is Enum?
-A. It's a set of fixed variables
+A.
+Enum is a special Java type used to define collections of constants. More precisely, a Java enum type is a special kind of Java class. An enum can contain constants, methods etc
 
 What is Iterator?
-A. It's an object which enables any programmer to traverse a container
+A.
+Iterators are used in Collection framework in Java to retrieve elements one by one
 
 Which one will take more memory, an int or Integer?
+A.
+int is a data type and integer is a class, therefore Integer takes more memory.
 
 Why is String Immutable in Java?
+A.
+The string is Immutable in Java because String objects are cached in String pool. Since cached String literals are shared between multiple clients there is always a risk, where one client's action would affect all another client
 
 What is constructor chaining in Java?
+A.
 
 The difference between Serial and Parallel Garbage Collector?
 
