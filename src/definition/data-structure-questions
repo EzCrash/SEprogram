@@ -2,33 +2,114 @@ Please answer the below Data Structure Questions:
 
 why do we need data structure?
 A.
-
+Data structure is needed to organize data in memory so that it can be used efficiently.
 
 What are the various operations that can be performed on different Data Structures?
+A.
+insert , delete , Sort, search, modification,
+
 List out the areas in which data structures are applied extensively?
+A.
+Database Management System, OS, Numerical Analysis,Graphics,Artificial Intelligence,Simulation
+
 what is an Array?
+A.
+block of memory tath stores a collection of values of the same type.
+
 what is the difference between the Array and ArrayList?
+A.
+Array's size is static, and ArrayList is dynamic.
+
 what is LinkedList?
+A.
+LinkedList is linear data structure where every element is a different object.
+
 How is an Array different from Linked List?
+A.
+array consumes contiguous memory locations allocated at compile time, while for a linked list, memory is assigned as and when data is added to it, which means at runtime.
+
 what is queue?
+A.
+queue is the process of storing data at the end of the queue, and elements removed from the beginning of the
+queue. Queue follows First In First Out FIFO rule.
+
+
 what is stack?
+A.
+As opposed to queue mentioned above, stack follows FILO(First in last Out) or it may be LIFO.
+
 what is FIFO and LIFO?
+A.
+FIFO stands for First In First Out and LIFO stands for Last In First Out.
+
 what is the order of complexity?
+A.
+
 what is the best case to search an element from an array?
+A.
+
 what is the worst case to search an element from an array?
+A.
+
 what is tree in data structure?
+A.
+A Tree is a non-linear data structure where data objects are organized in terms of hierarchical relationship. The structure is non-linear in the sense that, unlike simple array and linked list implementation, data in a tree is not organized linearly. Each data element is stored in a structure called a node. The topmost or starting node of the (inverted) tree is called the root node. All nodes are linked with an edge and form hierarchical sub trees beginning with the root node.
+
 what is graph in data structure?
+A.
+A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph
+
 what is the difference between the HashTable and HashMap?
+A.
+Hashtable is synchronized, whereas HashMap is not.
+Hashtable does not allow null keys or values.  HashMap allows one null key and any number of null values.
+One of HashMap's subclasses is LinkedHashMap, so in the event that you'd want predictable iteration order (which is insertion order by default), you could easily swap out the HashMap for a LinkedHashMap. This wouldn't be as easy if you were using Hashtable.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A.
+
 How HashMap works in java?
+A.
+HashMap in Java works on hashing principle. It is a data structure which allows us to store object and retrieve it in constant time O(1) provided we know the key.
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A.
+
 What are the different ways of copying an array into another array?
+A.
+
 What is difference between an array and a linked list?
+A.
+
 What is DFS and BFS?
+A.
+Depth First Traversals
+Breadth First Traversal
+
 What is Recursion?
+A.
+Recursion is a basic programming technique you can use in Java, in which a method calls itself to solve some problem. A method that uses this technique is recursive.
+
 What are linear and non linear data Structures?
+A.
+linear data structure are array, queue, stack, linked list, among others.
+non linear data structures are Graphs and trees.
+
+
 What is Big-(O)-notation?
+A.
+Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm.
+
 Outlined different kind of sorting algorithm with time complexity?
+A.
+Heap Sort	Ω(n log(n))	θ(n log(n))	O(n log(n))
+Quick Sort	Ω(n log(n))	θ(n log(n))	O(n^2)
+Radix Sort	Ω(nk)	θ(nk)	O(nk)
+Bubble Sort	Ω(n)	θ(n^2)	O(n^2)
+Merge Sort	Ω(n log(n))	θ(n log(n))	O(n log(n))
+Selection Sort	Ω(n^2)	θ(n^2)	O(n^2)
+Insertion Sort	Ω(n)	θ(n^2)	O(n^2)
+Bucket Sort	Ω(n+k)	θ(n+k)	O(n^2)
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
@@ -36,4 +117,60 @@ Draw a table with time complexity in which it will summarize all the data struct
   c)In terms of Searching element.
   d)In terms of Removing element.
 
+A.
+A.1 Array
+1.1 Quick insertion,
+1.2 Very fast access if index is known.
+1.3 Slow search,
+1.4 slow deletion,
+1.5 fixed size.
 
+A.2 Ordered array
+2.1 Quicker search than unsorted array
+2.2 Slow insertion and deletion,
+2.3 fixed size.
+
+A.3 Stack
+3.1 Provides last-in, first-out access.
+3.2 Slow access to other items.
+
+A.4 Queue
+4.1 Provides first-in, first-out access.
+4.2 Slow access to other items.
+
+A.5 Linked list
+5.1 Quick insertion, quick deletion.
+5.2 Slow search.
+
+A.6 Binary tree
+6.1 Quick search, insertion, deletion (if tree remains
+balanced).
+6.2 Deletion algorithm is complex.
+
+A.7 Red-black tree
+7.1 Quick search, insertion, deletion.
+7.2 Tree always balanced.
+7.3 Complex.
+
+A.8 2-3-4 tree
+8.1 Quick search, insertion, deletion.
+8.2 Tree always balanced.
+8.3 Similar trees good for disk storage.
+8.4 Complex.
+
+A.9 Hash
+9.1 Very fast access table if key known.
+9.2 Fast insertion
+9.3 Slow deletion,
+9.4 access slow if key is not known,
+9.5 inefficient memory usage.
+
+A.10 Heap
+10.1 Fast insertion,
+10.2 Fast deletion
+10.3 access to largest item.
+10.4 Slow access to other items.
+
+A.11 Graph
+11.1 Models real-world situations.
+11.2 Some algorithms are slow and complex.
