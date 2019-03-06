@@ -7,7 +7,7 @@ public class Fibonacci {
           0,1,1,2,3,5,8,13
          */
         int n = 40, a = 0, b = 1;
-        System.out.println("Here are " + n + " Fibonacci numbers: ");
+        System.out.println("Here are " + n + " series of Fibonacci numbers: ");
 
         for (int i = 1; i <= n; ++i)
         {
