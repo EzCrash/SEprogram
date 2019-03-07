@@ -44,12 +44,17 @@ FIFO stands for First In First Out and LIFO stands for Last In First Out.
 
 what is the order of complexity?
 A.
+It is a mathematical expression of the size of the input, so the algorithm finishes between two factors
+   of it. Generally, the smaller the order of complexity of the program's underlying algorithm, the faster it
+   will run and the better it will scale as the input gets larger.
 
 what is the best case to search an element from an array?
 A.
+Binary search
 
 what is the worst case to search an element from an array?
 A.
+Hypothetical data set.
 
 what is tree in data structure?
 A.
@@ -67,6 +72,7 @@ One of HashMap's subclasses is LinkedHashMap, so in the event that you'd want pr
 
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
 A.
+RDBMS uses Array and network data model uses Graphs and Hierarchical data model uses Trees.
 
 How HashMap works in java?
 A.
